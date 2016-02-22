@@ -3,6 +3,12 @@
 # * https://github.com/supermarin/xcpretty#usage
 
 language: objective-c
+osx_image: xcode7.2
+
+  global:
+  - LC_CTYPE=en_US.UTF-8
+  - LANG=en_US.UTF-8
+
 # cache: cocoapods
 # podfile: Example/Podfile
 # before_install:
