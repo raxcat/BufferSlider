@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'BufferSlider_Example', :exclusive => true do
+  pod 'BufferSlider', :path => '../'
+end
+
+target 'BufferSlider_Tests', :exclusive => true do
+  pod 'BufferSlider', :path => '../'
+
+  
+end
