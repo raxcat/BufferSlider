@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "56D55854D05172C3AE31AD81"
+               BlueprintIdentifier = "E5652E6CCC3547D6ECE7DC95"
                BuildableName = "BufferSlider.framework"
                BlueprintName = "BufferSlider"
                ReferencedContainer = "container:Pods.xcodeproj">

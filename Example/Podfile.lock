@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BufferSlider: 2bc935b06ade9ca58c76bb16b1724b3a77c0c742
+  BufferSlider: 924b55ad1f55de1d658fec296fe1546dd356a188
 
 COCOAPODS: 0.38.2

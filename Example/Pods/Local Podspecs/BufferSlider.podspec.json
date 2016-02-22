@@ -1,15 +1,15 @@
 {
   "name": "BufferSlider",
   "version": "0.1.0",
-  "summary": "A short description of BufferSlider.",
+  "summary": "A simple UISlider subclass that shows additional buffering status.",
   "description": "",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/BufferSlider",
+  "homepage": "https://github.com/raxcat/BufferSlider",
   "license": "MIT",
   "authors": {
-    "Brian Liu": "brianliu@actions-micro.com"
+    "Raxcat Liu(Brian Liu)": "raxcat@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/BufferSlider.git",
+    "git": "https://github.com/raxcat/BufferSlider.git",
     "tag": "0.1.0"
   },
   "platforms": {

@@ -31,6 +31,5 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'BufferSlider' => ['Pod/Assets/*.png']
   }
-  s.frameworks = 'UIKit'
 
 end
