@@ -1,0 +1,6 @@
+framework module BufferSlider {
+  umbrella header "BufferSlider-umbrella.h"
+
+  export *
+  module * { export * }
+}

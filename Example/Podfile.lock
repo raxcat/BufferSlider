@@ -1,0 +1,14 @@
+PODS:
+  - BufferSlider (0.1.0)
+
+DEPENDENCIES:
+  - BufferSlider (from `../`)
+
+EXTERNAL SOURCES:
+  BufferSlider:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BufferSlider: 2bc935b06ade9ca58c76bb16b1724b3a77c0c742
+
+COCOAPODS: 0.38.2
