@@ -1,6 +1,6 @@
 # BufferSlider
 
-[![CI Status](http://img.shields.io/travis/Brian Liu/BufferSlider.svg?style=flat)](https://travis-ci.org/Brian Liu/BufferSlider)
+[![CI Status](http://img.shields.io/travis/raxcat/BufferSlider.svg?style=flat)](https://travis-ci.org/raxcat/BufferSlider)
 [![Version](https://img.shields.io/cocoapods/v/BufferSlider.svg?style=flat)](http://cocoapods.org/pods/BufferSlider)
 [![License](https://img.shields.io/cocoapods/l/BufferSlider.svg?style=flat)](http://cocoapods.org/pods/BufferSlider)
 [![Platform](https://img.shields.io/cocoapods/p/BufferSlider.svg?style=flat)](http://cocoapods.org/pods/BufferSlider)
