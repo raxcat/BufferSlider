@@ -12,4 +12,4 @@ env:
     - DESTINATION="OS=9.2,name=iPhone 6S Plus"     SCHEME="$IOS_EXAMPLE_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" BUILD_EXAMPLE="YES" POD_LINT="NO"
 script:
   - set -o pipefail && xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO | xcpretty
-  - pod lib lint --allow-warnings
+  - pod lib lint BufferSlider.podspec --allow-warnings
