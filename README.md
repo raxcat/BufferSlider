@@ -12,6 +12,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+- *iOS SDK 8.0* and later
 
 ## Installation
 
@@ -24,8 +25,8 @@ pod "BufferSlider"
 
 ## Author
 
-Raxcat liu, raxcat@gmail.com (Personal account)
-Brian Liu, brianliu@actions-micro.com (Company account)
+- Raxcat liu, raxcat@gmail.com (Personal account)
+- Brian Liu, brianliu@actions-micro.com (Company account)
 
 ## License
 
