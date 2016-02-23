@@ -22,7 +22,6 @@
   - *@IBInspectable* property *sliderHeight* (*Swift.Double*)
 
 ## Usage
-
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
@@ -41,6 +40,8 @@ pod "BufferSlider"
 
 - Raxcat liu, raxcat@gmail.com (Personal account)
 - Brian Liu, brianliu@actions-micro.com (Company account)
+
+Feel free to contact me or send any PR.
 
 ## License
 
