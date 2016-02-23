@@ -7,10 +7,6 @@
 
 ![Alt text](/screenshot.png?raw=true "Optional title")
 
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 - Easily use
 - Easily customize
 - Drop-In replacement
@@ -24,6 +20,10 @@ To run the example project, clone the repo, and run `pod install` from the Examp
   - *@IBInspectable* property *fillColor* (*UIKit.UIColor*)
   - *@IBInspectable* property *borderWidth* (*Swift.Double*)
   - *@IBInspectable* property *sliderHeight* (*Swift.Double*)
+
+## Usage
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 - *iOS SDK 8.0* and later
