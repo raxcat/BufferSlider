@@ -11,6 +11,20 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+- Easily use
+- Easily customize
+- Drop-In replacement
+- Supports **Objective-C** and **Swift**
+- *@IBDesignable* class *BufferSlider*
+  - *@IBInspectable* property *bufferStartValue* (*Swift.Double*)
+    - 0.0 ~ 1.0 
+  - *@IBInspectable* property *bufferEndValue* (*Swift.Double*)
+    - 0.1 ~ 1.0 
+  - *@IBInspectable* property *borderColor* (*UIKit.UIColor*)
+  - *@IBInspectable* property *fillColor* (*UIKit.UIColor*)
+  - *@IBInspectable* property *borderWidth* (*Swift.Double*)
+  - *@IBInspectable* property *sliderHeight* (*Swift.Double*)
+
 ## Requirements
 - *iOS SDK 8.0* and later
 
