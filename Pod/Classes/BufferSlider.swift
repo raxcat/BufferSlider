@@ -10,11 +10,22 @@ import UIKit
 
 let padding:CGFloat = 2;
 
-@IBDesignable
-public class BufferSlider: UISlider {
-    ///0.0 ~ 1.0
-    @IBInspectable
-    var bufferStartValue:Double = 0{
+/// - Easily use
+/// - Easily customize
+/// - Drop-In replacement
+/// - Supports **Objective-C** and **Swift**
+/// - *@IBDesignable* class *BufferSlider*
+/// - *@IBInspectable* property *bufferStartValue* (*Swift.Double*)
+/// - 0.0 ~ 1.0
+/// - *@IBInspectable* property *bufferEndValue* (*Swift.Double*)
+/// - 0.1 ~ 1.0
+/// - *@IBInspectable* property *borderColor* (*UIKit.UIColor*)
+/// - *@IBInspectable* property *fillColor* (*UIKit.UIColor*)
+/// - *@IBInspectable* property *borderWidth* (*Swift.Double*)
+/// - *@IBInspectable* property *sliderHeight* (*Swift.Double*)
+@IBDesignable public class BufferSlider: UISlider {
+    ///0.0 ~ 1.0. @IBInspectable
+    @IBInspectable public var bufferStartValue:Double = 0{
         didSet{
             if bufferStartValue < 0.0 {
                 bufferStartValue = 0
@@ -25,9 +36,8 @@ public class BufferSlider: UISlider {
             self.setNeedsDisplay()
         }
     }
-    ///0.0 ~ 1.0
-    @IBInspectable
-    var bufferEndValue:Double = 0{
+    ///0.0 ~ 1.0. @IBInspectable
+    @IBInspectable public var bufferEndValue:Double = 0{
         didSet{
             if bufferEndValue > 1.0 {
                 bufferEndValue = 1
@@ -38,13 +48,15 @@ public class BufferSlider: UISlider {
             self.setNeedsDisplay()
         }
     }
-    @IBInspectable
-    var borderColor:UIColor = UIColor.blackColor()
-    @IBInspectable
-    var fillColor:UIColor? = nil
+    
+    ///fillColor property. @IBInspectable
+    @IBInspectable public var borderColor:UIColor = UIColor.blackColor()
+    
+    ///fillColor property. @IBInspectable
+    @IBInspectable public var fillColor:UIColor? = nil
 
-    @IBInspectable
-    var borderWidth: Double = 0.5 {
+    ///BorderWidth property. @IBInspectable
+    @IBInspectable public var borderWidth: Double = 0.5 {
         didSet{
             if borderWidth < 0.5 {
                 borderWidth = 0.5
@@ -53,21 +65,22 @@ public class BufferSlider: UISlider {
         }
     }
     
-    @IBInspectable
-    var sliderHeight: Double = 6 {
+    ///Slider height property. @IBInspectable
+    @IBInspectable public var sliderHeight: Double = 6 {
         didSet{
             if sliderHeight < 6 {
                 sliderHeight = 6
             }
         }
     }
-    
+    ///Do not call this delegate mehtod directly. This is for hiding built-in slider drawing after iOS 7.0
     public override func trackRectForBounds(bounds: CGRect) -> CGRect {
         var result = super.trackRectForBounds(bounds)
         result.size.height = 0.01
         return result
     }
     
+    ///Custom Drawing. Subclass and and override to suit you needs.
     public override func drawRect(rect: CGRect) {
         borderColor.set()
         let rect = CGRectInset(self.bounds, CGFloat(borderWidth)+padding, CGFloat(borderWidth))
