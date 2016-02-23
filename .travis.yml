@@ -6,10 +6,10 @@ env:
   - LANG=en_US.UTF-8
   - WORKSPACE="Example/BufferSlider.xcworkspace"
   - IOS_FRAMEWORK_SCHEME="BufferSlider"
-  - IOS_EXAMPLE_SCHEME="Example/BufferSlider.xcworkspace"
+  - IOS_EXAMPLE_SCHEME="BufferSlider"
   - IOS_SDK=iphonesimulator9.2
   matrix:
     - DESTINATION="OS=9.2,name=iPhone 6S Plus"     SCHEME="$IOS_EXAMPLE_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES" BUILD_EXAMPLE="YES" POD_LINT="NO"
 script:
   - set -o pipefail && xcodebuild -workspace "$WORKSPACE" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO test | xcpretty
-  - pod lib lint --allow-nowarnings
+  - pod lib lint --allow-warnings
