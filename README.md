@@ -24,7 +24,8 @@ pod "BufferSlider"
 
 ## Author
 
-Brian Liu, brianliu@actions-micro.com
+Raxcat liu, raxcat@gmail.com (Personal account)
+Brian Liu, brianliu@actions-micro.com (Company account)
 
 ## License
 
