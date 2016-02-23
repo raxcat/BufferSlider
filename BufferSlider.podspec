@@ -9,8 +9,8 @@
 Pod::Spec.new do |s|
   s.name             = "BufferSlider"
   s.version          = "0.1.0"
-  s.summary          = "A simple UISlider subclass that shows additional buffering status."
-
+  s.summary          = "An UISlider subclass"
+  s.description      = "An UISlider subclass shows additional information: buffering status."
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
