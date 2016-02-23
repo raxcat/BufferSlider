@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/BufferSlider.svg?style=flat)](http://cocoapods.org/pods/BufferSlider)
 [![Platform](https://img.shields.io/cocoapods/p/BufferSlider.svg?style=flat)](http://cocoapods.org/pods/BufferSlider)
 
-![Alt text](/screenshot.png?raw=true "Optional title")
+<img src="https://raw.githubusercontent.com/raxcat/BufferSlider/master/screenshot.png">
 
 - Easily use
 - Easily customize
