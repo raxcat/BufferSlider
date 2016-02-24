@@ -23,6 +23,10 @@ let padding:CGFloat = 0;
 /// - *@IBInspectable* property *fillColor* (*UIKit.UIColor*)
 /// - *@IBInspectable* property *borderWidth* (*Swift.Double*)
 /// - *@IBInspectable* property *sliderHeight* (*Swift.Double*)
+/// - property *sliderPosition* (*Swift.Enum:Int*)
+/// - *@IBInspectable* property *sliderPositionAdaptor* (*Swift.Int*) for InterfaceBuilder
+/// - *@IBInspectable* property *roundedSlider* (*Swift.Bool*)
+
 enum VerticalPosition:Int{
     case Top = 1
     case Center = 2
@@ -103,7 +107,8 @@ enum VerticalPosition:Int{
     }
     var sliderPosition:VerticalPosition = .Center
     
-    @IBInspectable var roundedSlider:Bool = true
+    ///Rounded or rectangle
+    @IBInspectable public var roundedSlider:Bool = true
     
     ///Do not call this delegate mehtod directly. This is for hiding built-in slider drawing after iOS 7.0
     public override func trackRectForBounds(bounds: CGRect) -> CGRect {
