@@ -8,7 +8,7 @@
 
 import UIKit
 
-let padding:CGFloat = 2;
+let padding:CGFloat = 0;
 
 /// - Easily use
 /// - Easily customize
@@ -23,6 +23,12 @@ let padding:CGFloat = 2;
 /// - *@IBInspectable* property *fillColor* (*UIKit.UIColor*)
 /// - *@IBInspectable* property *borderWidth* (*Swift.Double*)
 /// - *@IBInspectable* property *sliderHeight* (*Swift.Double*)
+enum VerticalPosition:Int{
+    case Top = 1
+    case Center = 2
+    case Bottom = 3
+}
+
 @IBDesignable public class BufferSlider: UISlider {
     ///0.0 ~ 1.0. @IBInspectable
     @IBInspectable public var bufferStartValue:Double = 0{
@@ -73,6 +79,30 @@ let padding:CGFloat = 2;
             }
         }
     }
+    ///Adaptor property. Stands for vertical position of slider.
+    /// - 1 -> Top
+    /// - 2 -> Center
+    /// - 3 -> Bottom
+    @IBInspectable public var sliderPositionAdaptor:Int{
+        get {
+            return sliderPosition.rawValue
+        }
+        set{
+            let r = abs(newValue) % 3
+            switch r {
+            case 1:
+                sliderPosition = .Top
+            case 2:
+                sliderPosition = .Center
+            case 0:
+                sliderPosition = .Bottom
+            default:
+                sliderPosition = .Center
+            }
+        }
+    }
+    var sliderPosition:VerticalPosition = .Center
+    
     ///Do not call this delegate mehtod directly. This is for hiding built-in slider drawing after iOS 7.0
     public override func trackRectForBounds(bounds: CGRect) -> CGRect {
         var result = super.trackRectForBounds(bounds)
@@ -82,11 +112,21 @@ let padding:CGFloat = 2;
     
     ///Custom Drawing. Subclass and and override to suit you needs.
     public override func drawRect(rect: CGRect) {
+//        UIColor.redColor().colorWithAlphaComponent(0.3).set()
+//        UIRectFrame(rect)
         borderColor.set()
         let rect = CGRectInset(self.bounds, CGFloat(borderWidth)+padding, CGFloat(borderWidth))
         let height = sliderHeight.CGFloatValue
         let radius = height/2
-        let sliderRect = CGRectMake(rect.origin.x, rect.origin.y + (rect.height/2-radius), rect.width, height)
+        var sliderRect = CGRectMake(rect.origin.x, rect.origin.y + (rect.height/2-radius), rect.width, height)  //default center
+        switch sliderPosition {
+        case .Top:
+            sliderRect.origin.y = rect.origin.y
+        case .Bottom:
+            sliderRect.origin.y = rect.origin.y + rect.height - sliderRect.height
+        default:
+            break
+        }
 
         let path = UIBezierPath()
         path.addArcWithCenter(CGPointMake(sliderRect.origin.x + radius, sliderRect.origin.y+radius), radius: radius, startAngle: CGFloat(M_PI)/2, endAngle: -CGFloat(M_PI)/2, clockwise: true)

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -19,15 +19,15 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jw0-LD-23k" customClass="BufferSlider" customModule="BufferSlider">
-                                <rect key="frame" x="18" y="285" width="564" height="31"/>
+                                <rect key="frame" x="18" y="240" width="564" height="31"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
                                         <real key="value" value="0.59999999999999998"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="hQt-x9-9oo" customClass="BufferSlider" customModule="BufferSlider">
-                                <rect key="frame" x="18" y="323" width="564" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="hQt-x9-9oo" customClass="BufferSlider" customModule="BufferSlider">
+                                <rect key="frame" x="18" y="290" width="564" height="31"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
                                         <real key="value" value="0.80000000000000004"/>
@@ -40,8 +40,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="52" minValue="0.0" maxValue="80" translatesAutoresizingMaskIntoConstraints="NO" id="qdC-mb-HGF" customClass="BufferSlider" customModule="BufferSlider">
-                                <rect key="frame" x="18" y="247" width="564" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="52" minValue="0.0" maxValue="80" translatesAutoresizingMaskIntoConstraints="NO" id="qdC-mb-HGF" customClass="BufferSlider" customModule="BufferSlider">
+                                <rect key="frame" x="18" y="190" width="564" height="31"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
                                         <real key="value" value="1"/>
@@ -54,25 +54,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="52" minValue="0.0" maxValue="80" translatesAutoresizingMaskIntoConstraints="NO" id="tv3-ID-iBa" customClass="BufferSlider" customModule="BufferSlider">
-                                <rect key="frame" x="18" y="209" width="564" height="31"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="bufferStartValue">
-                                        <real key="value" value="0.65000000000000002"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.45000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Je-HN-5kJ" customClass="BufferSlider" customModule="BufferSlider">
-                                <rect key="frame" x="18" y="171" width="564" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.45000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Je-HN-5kJ" customClass="BufferSlider" customModule="BufferSlider">
+                                <rect key="frame" x="18" y="90" width="564" height="31"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
                                         <real key="value" value="1"/>
@@ -88,8 +71,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.44999998807907104" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DtZ-Rt-edi" customClass="BufferSlider" customModule="BufferSlider">
-                                <rect key="frame" x="18" y="133" width="564" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.44999998807907104" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DtZ-Rt-edi" customClass="BufferSlider" customModule="BufferSlider">
+                                <rect key="frame" x="18" y="40" width="564" height="31"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
                                         <real key="value" value="1"/>
@@ -103,10 +86,13 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.95294117649999999" green="0.054901960780000002" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="8c0-fC-MGq" customClass="BufferSlider" customModule="BufferSlider">
-                                <rect key="frame" x="18" y="361" width="564" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="8c0-fC-MGq" customClass="BufferSlider" customModule="BufferSlider">
+                                <rect key="frame" x="18" y="340" width="564" height="31"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
                                         <real key="value" value="0.80000000000000004"/>
@@ -128,12 +114,47 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="52" minValue="0.0" maxValue="80" translatesAutoresizingMaskIntoConstraints="NO" id="tv3-ID-iBa" customClass="BufferSlider" customModule="BufferSlider">
+                                <rect key="frame" x="18" y="140" width="564" height="31"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bufferStartValue">
+                                        <real key="value" value="0.65000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Jw0-LD-23k" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="NWp-6g-g2X"/>
-                            <constraint firstItem="Jw0-LD-23k" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="QFi-gp-fj4"/>
-                            <constraint firstItem="Jw0-LD-23k" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="mPU-6k-rbe"/>
+                            <constraint firstItem="Jw0-LD-23k" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="5Tm-lW-BLA"/>
+                            <constraint firstItem="8c0-fC-MGq" firstAttribute="top" secondItem="hQt-x9-9oo" secondAttribute="bottom" constant="20" id="79R-xH-GtZ"/>
+                            <constraint firstItem="6Je-HN-5kJ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="9lS-90-KNU"/>
+                            <constraint firstItem="hQt-x9-9oo" firstAttribute="top" secondItem="Jw0-LD-23k" secondAttribute="bottom" constant="20" id="EZs-rO-DOw"/>
+                            <constraint firstItem="qdC-mb-HGF" firstAttribute="top" secondItem="tv3-ID-iBa" secondAttribute="bottom" constant="20" id="G0v-TE-Fpk"/>
+                            <constraint firstItem="DtZ-Rt-edi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="GS7-nX-QtD"/>
+                            <constraint firstItem="tv3-ID-iBa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="IMJ-aT-1my"/>
+                            <constraint firstItem="6Je-HN-5kJ" firstAttribute="top" secondItem="DtZ-Rt-edi" secondAttribute="bottom" constant="20" id="Pt8-mL-xE3"/>
+                            <constraint firstItem="qdC-mb-HGF" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="VOb-XK-eqP"/>
+                            <constraint firstItem="8c0-fC-MGq" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Vem-JB-fDZ"/>
+                            <constraint firstItem="tv3-ID-iBa" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="X7E-PI-ML0"/>
+                            <constraint firstItem="6Je-HN-5kJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="XK5-S8-JhD"/>
+                            <constraint firstItem="tv3-ID-iBa" firstAttribute="top" secondItem="6Je-HN-5kJ" secondAttribute="bottom" constant="20" id="e4g-rH-e89"/>
+                            <constraint firstItem="Jw0-LD-23k" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="f9U-uf-Iw4"/>
+                            <constraint firstItem="hQt-x9-9oo" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="h9g-CB-TxO"/>
+                            <constraint firstItem="qdC-mb-HGF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="hDE-up-OJ4"/>
+                            <constraint firstItem="DtZ-Rt-edi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nUe-45-4Ym"/>
+                            <constraint firstItem="Jw0-LD-23k" firstAttribute="top" secondItem="qdC-mb-HGF" secondAttribute="bottom" constant="20" id="oqT-9D-xxC"/>
+                            <constraint firstItem="8c0-fC-MGq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="vEV-QT-fSS"/>
+                            <constraint firstItem="DtZ-Rt-edi" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="vks-EA-462"/>
+                            <constraint firstItem="hQt-x9-9oo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="yoa-Fg-Lch"/>
                         </constraints>
                     </view>
                 </viewController>
