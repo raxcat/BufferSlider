@@ -132,16 +132,16 @@ enum VerticalPosition:Int{
 
         let path = UIBezierPath()
         if roundedSlider {
-            path.addArcWithCenter(CGPointMake(sliderRect.origin.x + radius, sliderRect.origin.y+radius), radius: radius, startAngle: CGFloat(M_PI)/2, endAngle: -CGFloat(M_PI)/2, clockwise: true)
-            path.addLineToPoint(CGPointMake(sliderRect.width-radius, sliderRect.origin.y))
-            path.addArcWithCenter(CGPointMake(sliderRect.width-radius, sliderRect.origin.y+radius), radius: radius, startAngle: -CGFloat(M_PI)/2, endAngle: CGFloat(M_PI)/2, clockwise: true)
-            path.addLineToPoint(CGPointMake(sliderRect.origin.x + radius, sliderRect.origin.y+height))
+            path.addArcWithCenter(CGPointMake(CGRectGetMinX(sliderRect) + radius, CGRectGetMinY(sliderRect)+radius), radius: radius, startAngle: CGFloat(M_PI)/2, endAngle: -CGFloat(M_PI)/2, clockwise: true)
+            path.addLineToPoint(CGPointMake(CGRectGetMaxX(sliderRect)-radius, CGRectGetMinY(sliderRect)))
+            path.addArcWithCenter(CGPointMake(CGRectGetMaxX(sliderRect)-radius, CGRectGetMinY(sliderRect)+radius), radius: radius, startAngle: -CGFloat(M_PI)/2, endAngle: CGFloat(M_PI)/2, clockwise: true)
+            path.addLineToPoint(CGPointMake(CGRectGetMinX(sliderRect) + radius, CGRectGetMinY(sliderRect)+height))
         }else{
-            path.moveToPoint(CGPointMake(sliderRect.origin.x, sliderRect.origin.y+sliderRect.height))
+            path.moveToPoint(CGPointMake(CGRectGetMinX(sliderRect), CGRectGetMinY(sliderRect)+height))
             path.addLineToPoint(sliderRect.origin)
-            path.addLineToPoint(CGPointMake(sliderRect.width, sliderRect.origin.y))
-            path.addLineToPoint(CGPointMake(sliderRect.origin.x+sliderRect.width, sliderRect.origin.y+sliderRect.height))
-            path.addLineToPoint(CGPointMake(sliderRect.origin.x, sliderRect.origin.y+height))
+            path.addLineToPoint(CGPointMake(CGRectGetMaxX(sliderRect), CGRectGetMinY(sliderRect)))
+            path.addLineToPoint(CGPointMake(CGRectGetMaxX(sliderRect), CGRectGetMinY(sliderRect)+height))
+            path.addLineToPoint(CGPointMake(CGRectGetMinX(sliderRect), CGRectGetMinY(sliderRect)+height))
         }
 
         borderColor.setStroke()
