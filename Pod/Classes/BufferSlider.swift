@@ -103,6 +103,8 @@ enum VerticalPosition:Int{
     }
     var sliderPosition:VerticalPosition = .Center
     
+    @IBInspectable var roundedSlider:Bool = true
+    
     ///Do not call this delegate mehtod directly. This is for hiding built-in slider drawing after iOS 7.0
     public override func trackRectForBounds(bounds: CGRect) -> CGRect {
         var result = super.trackRectForBounds(bounds)
@@ -129,11 +131,19 @@ enum VerticalPosition:Int{
         }
 
         let path = UIBezierPath()
-        path.addArcWithCenter(CGPointMake(sliderRect.origin.x + radius, sliderRect.origin.y+radius), radius: radius, startAngle: CGFloat(M_PI)/2, endAngle: -CGFloat(M_PI)/2, clockwise: true)
-        path.addLineToPoint(CGPointMake(sliderRect.width-radius, sliderRect.origin.y))
-        path.addArcWithCenter(CGPointMake(sliderRect.width-radius, sliderRect.origin.y+radius), radius: radius, startAngle: -CGFloat(M_PI)/2, endAngle: CGFloat(M_PI)/2, clockwise: true)
-        path.addLineToPoint(CGPointMake(sliderRect.origin.x + radius, sliderRect.origin.y+height))
-        
+        if roundedSlider {
+            path.addArcWithCenter(CGPointMake(sliderRect.origin.x + radius, sliderRect.origin.y+radius), radius: radius, startAngle: CGFloat(M_PI)/2, endAngle: -CGFloat(M_PI)/2, clockwise: true)
+            path.addLineToPoint(CGPointMake(sliderRect.width-radius, sliderRect.origin.y))
+            path.addArcWithCenter(CGPointMake(sliderRect.width-radius, sliderRect.origin.y+radius), radius: radius, startAngle: -CGFloat(M_PI)/2, endAngle: CGFloat(M_PI)/2, clockwise: true)
+            path.addLineToPoint(CGPointMake(sliderRect.origin.x + radius, sliderRect.origin.y+height))
+        }else{
+            path.moveToPoint(CGPointMake(sliderRect.origin.x, sliderRect.origin.y+sliderRect.height))
+            path.addLineToPoint(sliderRect.origin)
+            path.addLineToPoint(CGPointMake(sliderRect.width, sliderRect.origin.y))
+            path.addLineToPoint(CGPointMake(sliderRect.origin.x+sliderRect.width, sliderRect.origin.y+sliderRect.height))
+            path.addLineToPoint(CGPointMake(sliderRect.origin.x, sliderRect.origin.y+height))
+        }
+
         borderColor.setStroke()
         path.lineWidth = borderWidth.CGFloatValue
         path.stroke()
