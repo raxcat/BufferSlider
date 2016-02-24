@@ -20,6 +20,9 @@
   - *@IBInspectable* property *fillColor* (*UIKit.UIColor*)
   - *@IBInspectable* property *borderWidth* (*Swift.Double*)
   - *@IBInspectable* property *sliderHeight* (*Swift.Double*)
+  - property *sliderPosition* (*Swift.Enum:Int*)
+  - *@IBInspectable* property *sliderPositionAdaptor* (*Swift.Int*) for InterfaceBuilder
+  - *@IBInspectable* property *roundedSlider* (*Swift.Bool*)
 
 ## Usage
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
