@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/BufferSlider.svg?style=flat)](http://cocoapods.org/pods/BufferSlider)
 [![Platform](https://img.shields.io/cocoapods/p/BufferSlider.svg?style=flat)](http://cocoapods.org/pods/BufferSlider)
 
-<img src="https://raw.githubusercontent.com/raxcat/BufferSlider/master/screenshot.png">
+<img src="https://raw.githubusercontent.com/raxcat/BufferSlider/master/screenshot2.png">
 
 - Easily use
 - Easily customize
