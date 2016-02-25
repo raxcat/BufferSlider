@@ -25,7 +25,16 @@
                                         <real key="value" value="0.59999999999999998"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="baseColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bufferColor">
+                                        <color key="value" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.10000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
@@ -35,14 +44,11 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
                                         <real key="value" value="0.80000000000000004"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" red="0.0" green="0.49983100000000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferStartValue">
                                         <real key="value" value="0.20000000000000001"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
@@ -52,15 +58,16 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferStartValue">
                                         <real key="value" value="0.65000000000000002"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bufferColor">
+                                        <color key="value" red="0.25098040700000002" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hollow" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.45000000000000001" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Je-HN-5kJ" customClass="BufferSlider" customModule="BufferSlider">
@@ -69,19 +76,14 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferStartValue">
                                         <real key="value" value="0.45000000000000001"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundedSlider" value="NO"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hollow" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.44999998807907104" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DtZ-Rt-edi" customClass="BufferSlider" customModule="BufferSlider">
@@ -90,18 +92,12 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" red="0.95294117649999999" green="0.054901960780000002" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferStartValue">
                                         <real key="value" value="0.45000000000000001"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.95294117649999999" green="0.054901960780000002" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundedSlider" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
@@ -111,17 +107,17 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
                                         <real key="value" value="0.80000000000000004"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" red="1" green="0.91067901205180968" blue="0.42084523306253363" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferStartValue">
                                         <real key="value" value="0.20000000000000001"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="1" green="0.83544201592076961" blue="0.42625682286825861" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
-                                        <real key="value" value="2"/>
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="baseColor">
+                                        <color key="value" red="1" green="0.8354420159" blue="0.4262568229" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bufferColor">
+                                        <color key="value" red="1" green="0.8354420159" blue="0.4262568229" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
@@ -131,39 +127,65 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
                                         <real key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
-                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferStartValue">
                                         <real key="value" value="0.65000000000000002"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundedSlider" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bufferColor">
+                                        <color key="value" red="0.95294117649999999" green="0.054901960780000002" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="tzh-Pb-bAh" customClass="BufferSlider" customModule="BufferSlider">
+                                <rect key="frame" x="18" y="393" width="564" height="31"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
+                                        <real key="value" value="0.80000000000000004"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bufferStartValue">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="baseColor">
+                                        <color key="value" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bufferColor">
+                                        <color key="value" red="1" green="0.8354420159" blue="0.4262568229" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedSlider" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hollow" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Jw0-LD-23k" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="5Tm-lW-BLA"/>
+                            <constraint firstItem="tzh-Pb-bAh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="5fF-3M-scL"/>
                             <constraint firstItem="8c0-fC-MGq" firstAttribute="top" secondItem="hQt-x9-9oo" secondAttribute="bottom" constant="20" id="79R-xH-GtZ"/>
                             <constraint firstItem="6Je-HN-5kJ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="9lS-90-KNU"/>
                             <constraint firstItem="hQt-x9-9oo" firstAttribute="top" secondItem="Jw0-LD-23k" secondAttribute="bottom" constant="20" id="EZs-rO-DOw"/>
                             <constraint firstItem="qdC-mb-HGF" firstAttribute="top" secondItem="tv3-ID-iBa" secondAttribute="bottom" constant="20" id="G0v-TE-Fpk"/>
                             <constraint firstItem="DtZ-Rt-edi" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="GS7-nX-QtD"/>
                             <constraint firstItem="tv3-ID-iBa" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="IMJ-aT-1my"/>
+                            <constraint firstItem="tzh-Pb-bAh" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="LBl-v2-M6u"/>
                             <constraint firstItem="6Je-HN-5kJ" firstAttribute="top" secondItem="DtZ-Rt-edi" secondAttribute="bottom" constant="20" id="Pt8-mL-xE3"/>
                             <constraint firstItem="qdC-mb-HGF" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="VOb-XK-eqP"/>
                             <constraint firstItem="8c0-fC-MGq" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Vem-JB-fDZ"/>
                             <constraint firstItem="tv3-ID-iBa" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="X7E-PI-ML0"/>
                             <constraint firstItem="6Je-HN-5kJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="XK5-S8-JhD"/>
+                            <constraint firstItem="tzh-Pb-bAh" firstAttribute="top" secondItem="8c0-fC-MGq" secondAttribute="bottom" constant="23" id="btD-SW-I4k"/>
                             <constraint firstItem="tv3-ID-iBa" firstAttribute="top" secondItem="6Je-HN-5kJ" secondAttribute="bottom" constant="20" id="e4g-rH-e89"/>
                             <constraint firstItem="Jw0-LD-23k" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="f9U-uf-Iw4"/>
                             <constraint firstItem="hQt-x9-9oo" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="h9g-CB-TxO"/>
                             <constraint firstItem="qdC-mb-HGF" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="hDE-up-OJ4"/>
                             <constraint firstItem="DtZ-Rt-edi" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="nUe-45-4Ym"/>
                             <constraint firstItem="Jw0-LD-23k" firstAttribute="top" secondItem="qdC-mb-HGF" secondAttribute="bottom" constant="20" id="oqT-9D-xxC"/>
+                            <constraint firstItem="tzh-Pb-bAh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="pvz-b7-MEA"/>
                             <constraint firstItem="8c0-fC-MGq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="vEV-QT-fSS"/>
                             <constraint firstItem="DtZ-Rt-edi" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="vks-EA-462"/>
                             <constraint firstItem="hQt-x9-9oo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="yoa-Fg-Lch"/>

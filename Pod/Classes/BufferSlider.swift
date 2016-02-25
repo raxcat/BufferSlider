@@ -9,6 +9,12 @@
 import UIKit
 
 let padding:CGFloat = 0;
+///Enum of vertical position
+public enum VerticalPosition:Int{
+    case Top = 1
+    case Center = 2
+    case Bottom = 3
+}
 
 /// - Easily use
 /// - Easily customize
@@ -23,12 +29,6 @@ let padding:CGFloat = 0;
 /// - *@IBInspectable* property *fillColor* (*UIKit.UIColor*)
 /// - *@IBInspectable* property *borderWidth* (*Swift.Double*)
 /// - *@IBInspectable* property *sliderHeight* (*Swift.Double*)
-enum VerticalPosition:Int{
-    case Top = 1
-    case Center = 2
-    case Bottom = 3
-}
-
 @IBDesignable public class BufferSlider: UISlider {
     ///0.0 ~ 1.0. @IBInspectable
     @IBInspectable public var bufferStartValue:Double = 0{
@@ -56,30 +56,30 @@ enum VerticalPosition:Int{
     }
     
     ///fillColor property. @IBInspectable
-    @IBInspectable public var borderColor:UIColor = UIColor.blackColor()
+    @IBInspectable public var baseColor:UIColor = UIColor.lightGrayColor()
     
     ///fillColor property. @IBInspectable
-    @IBInspectable public var fillColor:UIColor? = nil
+    @IBInspectable public var bufferColor:UIColor? = nil
 
     ///BorderWidth property. @IBInspectable
-    @IBInspectable public var borderWidth: Double = 0.5 {
+    @IBInspectable public var borderWidth: Double = 0.5{
         didSet{
-            if borderWidth < 0.5 {
-                borderWidth = 0.5
+            if borderWidth < 0.1 {
+                borderWidth = 0.1
             }
             self.setNeedsDisplay()
         }
     }
     
     ///Slider height property. @IBInspectable
-    @IBInspectable public var sliderHeight: Double = 1 {
+    @IBInspectable public var sliderHeight: Double = 2 {
         didSet{
             if sliderHeight < 1 {
                 sliderHeight = 1
             }
         }
     }
-    ///Adaptor property. Stands for vertical position of slider.
+    ///Adaptor property. Stands for vertical position of slider. (Swift and Objective-C)
     /// - 1 -> Top
     /// - 2 -> Center
     /// - 3 -> Bottom
@@ -101,9 +101,14 @@ enum VerticalPosition:Int{
             }
         }
     }
-    var sliderPosition:VerticalPosition = .Center
+    ///Vertical position of slider. (Swift only)
+    public var sliderPosition:VerticalPosition = .Center
     
-    @IBInspectable var roundedSlider:Bool = true
+    ///Draw round corner or not
+    @IBInspectable public var roundedSlider:Bool = true
+    
+    ///Draw hollow or solid color
+    @IBInspectable public var hollow:Bool = true
     
     ///Do not call this delegate mehtod directly. This is for hiding built-in slider drawing after iOS 7.0
     public override func trackRectForBounds(bounds: CGRect) -> CGRect {
@@ -116,7 +121,7 @@ enum VerticalPosition:Int{
     public override func drawRect(rect: CGRect) {
 //        UIColor.redColor().colorWithAlphaComponent(0.3).set()
 //        UIRectFrame(rect)
-        borderColor.set()
+        baseColor.set()
         let rect = CGRectInset(self.bounds, CGFloat(borderWidth)+padding, CGFloat(borderWidth))
         let height = sliderHeight.CGFloatValue
         let radius = height/2
@@ -144,9 +149,10 @@ enum VerticalPosition:Int{
             path.addLineToPoint(CGPointMake(CGRectGetMinX(sliderRect), CGRectGetMinY(sliderRect)+height))
         }
 
-        borderColor.setStroke()
+        baseColor.setStroke()
         path.lineWidth = borderWidth.CGFloatValue
         path.stroke()
+        if hollow == false { path.fill() }
         path.addClip()
         
         var fillHeight = sliderRect.size.height-borderWidth.CGFloatValue
@@ -159,9 +165,9 @@ enum VerticalPosition:Int{
             sliderRect.origin.y + borderWidth.CGFloatValue/2,
             sliderRect.size.width*CGFloat(bufferEndValue-bufferStartValue),
             fillHeight)
-        if let color = fillColor { color.setFill() }
+        if let color = bufferColor { color.setFill() }
         else if let color = self.superview?.tintColor{ color.setFill()}
-        else{ UIColor.redColor().setFill() }
+        else{ UIColor(red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0).setFill() }
         
         UIBezierPath(rect: fillRect).fill()
     }
