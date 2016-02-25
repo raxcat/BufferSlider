@@ -72,10 +72,10 @@ enum VerticalPosition:Int{
     }
     
     ///Slider height property. @IBInspectable
-    @IBInspectable public var sliderHeight: Double = 6 {
+    @IBInspectable public var sliderHeight: Double = 1 {
         didSet{
-            if sliderHeight < 6 {
-                sliderHeight = 6
+            if sliderHeight < 1 {
+                sliderHeight = 1
             }
         }
     }

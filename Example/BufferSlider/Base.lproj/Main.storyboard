@@ -24,6 +24,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferEndValue">
                                         <real key="value" value="0.59999999999999998"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="hQt-x9-9oo" customClass="BufferSlider" customModule="BufferSlider">
@@ -38,6 +41,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferStartValue">
                                         <real key="value" value="0.20000000000000001"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="52" minValue="0.0" maxValue="80" translatesAutoresizingMaskIntoConstraints="NO" id="qdC-mb-HGF" customClass="BufferSlider" customModule="BufferSlider">
@@ -51,6 +57,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="bufferStartValue">
                                         <real key="value" value="0.65000000000000002"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
@@ -70,6 +79,9 @@
                                         <color key="value" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundedSlider" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.44999998807907104" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DtZ-Rt-edi" customClass="BufferSlider" customModule="BufferSlider">
@@ -87,10 +99,10 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="0.95294117649999999" green="0.054901960780000002" blue="0.2666666667" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedSlider" value="YES"/>
                                     <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
-                                        <real key="value" value="0.0"/>
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundedSlider" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="0.0" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="8c0-fC-MGq" customClass="BufferSlider" customModule="BufferSlider">
@@ -108,11 +120,8 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                         <color key="value" red="1" green="0.83544201592076961" blue="0.42625682286825861" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="sliderHeight">
-                                        <real key="value" value="9"/>
+                                        <real key="value" value="2"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </slider>
