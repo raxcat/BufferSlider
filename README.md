@@ -4,6 +4,9 @@
 [![Version](https://img.shields.io/cocoapods/v/BufferSlider.svg?style=flat)](http://cocoapods.org/pods/BufferSlider)
 [![License](https://img.shields.io/cocoapods/l/BufferSlider.svg?style=flat)](http://cocoapods.org/pods/BufferSlider)
 [![Platform](https://img.shields.io/cocoapods/p/BufferSlider.svg?style=flat)](http://cocoapods.org/pods/BufferSlider)
+[![Swift 2.0+](https://img.shields.io/badge/Swift-2.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Xcode 7.0+](https://img.shields.io/badge/Xcode-7.0+-blue.svg?style=flat)](https://developer.apple.com/swift/)
+
 
 <img src="https://raw.githubusercontent.com/raxcat/BufferSlider/master/screenshot2.png">
 
@@ -29,6 +32,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 - *iOS SDK 8.0* and later
+- Swift2
+- Xcode 7.0+
 
 ## Installation
 
