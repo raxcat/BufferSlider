@@ -20,7 +20,9 @@
   - *@IBInspectable* property *bufferEndValue* (*Swift.Double*)
     - 0.1 ~ 1.0 
   - *@IBInspectable* property *borderColor* (*UIKit.UIColor*)
-  - *@IBInspectable* property *fillColor* (*UIKit.UIColor*)
+  - *@IBInspectable* property *baseColor* (*UIKit.UIColor*)
+  - *@IBInspectable* property *bufferColor* (*UIKit.UIColor*)
+  - *@IBInspectable* property *progressColor* (*UIKit.UIColor*)
   - *@IBInspectable* property *borderWidth* (*Swift.Double*)
   - *@IBInspectable* property *sliderHeight* (*Swift.Double*)
   - property *sliderPosition* (*Swift.Enum:Int*)

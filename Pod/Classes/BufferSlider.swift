@@ -55,13 +55,13 @@ public enum VerticalPosition:Int{
         }
     }
     
-    ///fillColor property. @IBInspectable
+    ///baseColor property. @IBInspectable
     @IBInspectable public var baseColor:UIColor = UIColor.lightGrayColor()
     
-    ///fillColor property. @IBInspectable
+    ///progressColor property. @IBInspectable
     @IBInspectable public var progressColor:UIColor? = UIColor.blueColor()
     
-    ///fillColor property. @IBInspectable
+    ///bufferColor property. @IBInspectable
     @IBInspectable public var bufferColor:UIColor? = nil
 
     ///BorderWidth property. @IBInspectable
