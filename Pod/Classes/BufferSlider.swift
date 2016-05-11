@@ -59,6 +59,9 @@ public enum VerticalPosition:Int{
     @IBInspectable public var baseColor:UIColor = UIColor.lightGrayColor()
     
     ///fillColor property. @IBInspectable
+    @IBInspectable public var progressColor:UIColor? = UIColor.blueColor()
+    
+    ///fillColor property. @IBInspectable
     @IBInspectable public var bufferColor:UIColor? = nil
 
     ///BorderWidth property. @IBInspectable
@@ -170,6 +173,16 @@ public enum VerticalPosition:Int{
         else{ UIColor(red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0).setFill() }
         
         UIBezierPath(rect: fillRect).fill()
+        
+        if let color = progressColor {
+            color.setFill()
+            let fillRect = CGRectMake(
+                sliderRect.origin.x,
+                sliderRect.origin.y + borderWidth.CGFloatValue/2,
+                sliderRect.size.width*CGFloat((value-minimumValue)/(maximumValue-minimumValue)),
+                fillHeight)
+            UIBezierPath(rect: fillRect).fill()
+        }
     }
 
 }
