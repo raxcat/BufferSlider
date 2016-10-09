@@ -174,15 +174,15 @@ public enum VerticalPosition:Int{
         
         UIBezierPath(rect: fillRect).fill()
         
-        if let color = progressColor {
-            color.setFill()
-            let fillRect = CGRect(
-                x: sliderRect.origin.x,
-                y: sliderRect.origin.y + borderWidth.CGFloatValue/2,
-                width: sliderRect.size.width*CGFloat((value-minimumValue)/(maximumValue-minimumValue)),
-                height: fillHeight)
-            UIBezierPath(rect: fillRect).fill()
-        }
+//        if let color = progressColor {
+//            color.setFill()
+//            let fillRect = CGRect(
+//                x: sliderRect.origin.x,
+//                y: sliderRect.origin.y + borderWidth.CGFloatValue/2,
+//                width: sliderRect.size.width*CGFloat((value-minimumValue)/(maximumValue-minimumValue)),
+//                height: fillHeight)
+//            UIBezierPath(rect: fillRect).fill()
+//        }
     }
 
 }
