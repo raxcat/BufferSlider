@@ -1,11 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'BufferSlider_Example', :exclusive => true do
+target 'BufferSlider_Example' do
   pod 'BufferSlider', :path => '../'
 end
 
-target 'BufferSlider_Tests', :exclusive => true do
+target 'BufferSlider_Tests' do
   pod 'BufferSlider', :path => '../'
 
   
