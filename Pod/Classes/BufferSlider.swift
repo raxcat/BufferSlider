@@ -59,7 +59,7 @@ public enum VerticalPosition:Int{
     @IBInspectable open var baseColor:UIColor = UIColor.lightGray
     
     ///progressColor property. @IBInspectable
-    @IBInspectable open var progressColor:UIColor? = UIColor.blue
+    @IBInspectable open var progressColor:UIColor? = nil
     
     ///bufferColor property. @IBInspectable
     @IBInspectable open var bufferColor:UIColor? = nil
@@ -155,7 +155,7 @@ public enum VerticalPosition:Int{
         baseColor.setStroke()
         path.lineWidth = borderWidth.CGFloatValue
         path.stroke()
-        if hollow == false { path.fill() }
+        if !hollow { path.fill() }
         path.addClip()
         
         var fillHeight = sliderRect.size.height-borderWidth.CGFloatValue
@@ -174,15 +174,16 @@ public enum VerticalPosition:Int{
         
         UIBezierPath(rect: fillRect).fill()
         
-//        if let color = progressColor {
-//            color.setFill()
-//            let fillRect = CGRect(
-//                x: sliderRect.origin.x,
-//                y: sliderRect.origin.y + borderWidth.CGFloatValue/2,
-//                width: sliderRect.size.width*CGFloat((value-minimumValue)/(maximumValue-minimumValue)),
-//                height: fillHeight)
-//            UIBezierPath(rect: fillRect).fill()
-//        }
+        
+        if let color = progressColor{
+            color.setFill()
+            let fillRect = CGRect(
+                x: sliderRect.origin.x,
+                y: sliderRect.origin.y + borderWidth.CGFloatValue/2,
+                width: sliderRect.size.width*CGFloat((value-minimumValue)/(maximumValue-minimumValue)),
+                height: fillHeight)
+            UIBezierPath(rect: fillRect).fill()
+        }
     }
 
 }
