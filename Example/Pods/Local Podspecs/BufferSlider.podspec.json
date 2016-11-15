@@ -1,8 +1,8 @@
 {
   "name": "BufferSlider",
-  "version": "0.1.0",
-  "summary": "A simple UISlider subclass that shows additional buffering status.",
-  "description": "",
+  "version": "0.1.5",
+  "summary": "An UISlider subclass",
+  "description": "An UISlider subclass shows additional information: Video/Audio/Media buffering status.",
   "homepage": "https://github.com/raxcat/BufferSlider",
   "license": "MIT",
   "authors": {
@@ -10,16 +10,11 @@
   },
   "source": {
     "git": "https://github.com/raxcat/BufferSlider.git",
-    "tag": "0.1.0"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "8.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "BufferSlider": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "source_files": "Pod/Classes/**/*"
 }
