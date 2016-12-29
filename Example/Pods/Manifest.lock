@@ -1,5 +1,5 @@
 PODS:
-  - BufferSlider (0.1.5)
+  - BufferSlider (0.1.6)
 
 DEPENDENCIES:
   - BufferSlider (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BufferSlider: 5a22e53a9e342dcc697b2fd2f6190cd7aae11115
+  BufferSlider: 6ff95d51da6303a516d8c1ef4e2831635820c6bc
 
-PODFILE CHECKSUM: 8088ef52119d7f771a7dca80e3b98047aba70b88
+PODFILE CHECKSUM: 4bf3bed11dbe4cb2dbbb57e72a136226edf3a596
 
 COCOAPODS: 1.1.1

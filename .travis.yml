@@ -6,7 +6,7 @@ env:
   - LANG=en_US.UTF-8
   - WORKSPACE="Example/BufferSlider.xcworkspace"
   - IOS_FRAMEWORK_SCHEME="BufferSlider"
-  - IOS_EXAMPLE_SCHEME="BufferSlider"
+  - IOS_EXAMPLE_SCHEME="BufferSlider-Example"
   - IOS_SDK=iphonesimulator10.0
   matrix:
   - DESTINATION="OS=9.2,name=iPhone 6S Plus"     SCHEME="$IOS_EXAMPLE_SCHEME"     SDK="$IOS_SDK"     RUN_TESTS="YES"
@@ -17,15 +17,13 @@ env:
 before_install:
   - gem install cocoapods --pre --no-rdoc --no-ri --no-document --quiet
 script:
-- set -o pipefail
+#- set -o pipefail
 - xcodebuild -version
 - xcodebuild -showsdks
-- pwd
-- xcodebuild -workspace Example/BufferSlider.xcworkspace -list
 
 - if [ $BUILD_EXAMPLE == "YES" ]; then xcodebuild -workspace "$WORKSPACE" -scheme
-  "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO
-  | xcpretty -c; fi
+  "$SCHEME" -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO; 
+  fi
 - if [ $POD_LINT == "YES" ]; then pod lib lint; fi
 notifications:
   slack:
