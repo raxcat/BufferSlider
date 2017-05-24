@@ -18,8 +18,11 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
             self?.slider.value += 0.2
+            self?.slider.bufferStartValue = 0.1
+            self?.slider.bufferEndValue = 0.8
+            self?.slider.bufferColor = UIColor.red;
         }
     }
 
