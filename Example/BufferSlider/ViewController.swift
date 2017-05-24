@@ -7,12 +7,20 @@
 //
 
 import UIKit
-
+import BufferSlider
 class ViewController: UIViewController {
 
+    @IBOutlet weak var slider: BufferSlider!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) { [weak self] in
+            self?.slider.value += 0.2
+        }
     }
 
     override func didReceiveMemoryWarning() {
